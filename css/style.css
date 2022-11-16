@@ -17,9 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #cad0cb;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -29,6 +28,11 @@ a {
     font-size: 28px;
     font-weight: 600;
 
+}
+
+nav {
+    border-bottom: 2px solid #000;
+    border-radius: 5px;
 }
 
 nav a {
@@ -64,17 +68,19 @@ nav ul li {
     white-space: nowrap;
 }
 
+
 #profile-photo {
     height: auto;
     width: 255px;
     border-radius: 50%;
+    border: 2px solid black;
 }
 
 .main-container {
     margin: auto;
     margin-top: 2.5rem;
     min-width: 50%;
-    max-width: 60%;
+    max-width: 55%;
 }
 
 .main-container .main-info {
@@ -111,10 +117,11 @@ nav ul li {
     border: 1px solid rgb(9, 39, 14);
     border-radius: 8px;
     padding: 20px;
+    font-size: 1.5rem;
 }
 
 .main-container .main-info #kappa {
-    height: 219px;
+    height: 175px;
     width: auto;
 }
 
@@ -130,7 +137,7 @@ nav ul li {
 }
 
 .main-container .main-info #devil {
-    height: 219px;
+    height: 175px;
     width: auto;
 }
 
@@ -144,6 +151,7 @@ nav ul li {
     max-width: 60%;
     align-items: center;
     justify-content: space-between;
+    color: #000;
 }
 
 .right-footer {
@@ -174,7 +182,6 @@ nav ul li {
 .left-footer h3 {
     font-size: 20px;
 }
-
 
 
 
@@ -237,6 +244,18 @@ nav ul li {
     }
 } 
 
+@media screen and (max-width: 850px) {
+    .main-container .main-info #kappa {
+        height: 150px;
+        width: auto;
+    }
+
+    .main-container .main-info #devil {
+        height: 150px;
+        width: auto;
+    }
+} 
+
 @media screen and (max-width: 700px) {
     a {
         font-size: 20px;
@@ -247,25 +266,25 @@ nav ul li {
     }
 
     .main-container .main-info #kappa {
-        height: 140px;
+        height: 110px;
         width: auto;
     }
 
     .main-container .main-info #devil {
-        height: 140px;
+        height: 110px;
         width: auto;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .main-container .main-info #kappa {
-        height: 80px;
+        height: 95px;
         width: auto;
     }
 
     .main-container .main-info #devil {
-        height: 80px;
+        height: 95px;
         width: auto;
     }
 

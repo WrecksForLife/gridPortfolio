@@ -13,13 +13,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2b4030;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #cad0cb;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -86,37 +85,215 @@ nav ul li {
     margin: auto;
     margin-top: 2.5rem;
     min-width: 50%;
-    max-width: 60%;
+    max-width: 90%;
+}
+
+.main-container .charandprops {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    padding-bottom: 5rem;
 }
 
 .main-container .characters {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: auto auto auto auto auto;
+    grid-column: 1 / 2;
+    grid-template-columns: 100%;
+    grid-template-rows: 2% auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
+.main-container .props {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-columns: 100%;
+    grid-template-rows: 2% auto auto auto auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Characters */
+
 .main-container .characters .reedturn {
-    height: 400px;
-    width: auto;
-    grid-column: 1 / 6;
+    height: auto;
+    width: 916px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .reedstyle {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+
+.main-container .characters .reedexpress {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
     margin: auto;
 }
 
 .main-container .characters .canman {
-    height: 400px;
-    width: auto;
-    grid-column: 1 / 6;
+    height: auto;
+    width: 618px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .boarstart {
+    height: auto;
+    width: 1500px;
+    grid-column: 1 / 1;
     margin: auto;
 }
 
 .main-container .characters .boarturn {
-    height: 300px;
-    width: auto;
-    grid-column: 1 / 6;
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
     margin: auto;
+}
+
+.main-container .characters .dadpose {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .butchexpress {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .characterlineup {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .lineup {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .kitsune {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .oni {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .cappy {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .devillambent1 {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .characters .devillambent2 {
+    height: auto;
+    width: 1250px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+/* Props */
+
+.main-container .props .plant {
+    height: auto;
+    width: 700px;
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.main-container .props .slots {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .chair {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .spaceship {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .welding {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .gnoll {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .uzi {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .fry {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.main-container .props .stove {
+    height: auto;
+    width: 700px;
+    grid-column: 1 / 1;
+    margin: auto;
+}
+
+.characters img {
+    max-width: 60%;
+}
+
+.props img {
+    max-width: 60%;
 }
 
 
@@ -165,32 +342,6 @@ nav ul li {
 
 
 /* Media Queries */
-@media screen and (max-width: 1600px){
-    .main-container .characters .boarturn {
-        height: 230px;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 1230px){
-    .main-container .characters .reedturn {
-        height: 300px;
-        width: auto;
-
-    }
-
-    .main-container .characters .canman {
-        height: 300px;
-        width: auto;
-    }
-
-    .main-container .characters .boarturn {
-        height: 180px;
-        width: auto;;
-    }
-
-    
-}
 
 @media screen and (max-width: 1050px){
     .left-footer, .right-footer {
@@ -217,35 +368,8 @@ nav ul li {
     }    
 }
 
-@media screen and (max-width: 900px){
-    .main-container .characters .reedturn {
-        height: 200px;
-        width: auto;
-    }
-
-    .main-container .characters .canman {
-        height: 200px;
-        width: auto;
-    }
-
-    .main-container .characters .boarturn {
-        height: 130px;
-        width: auto;
-    }
-}
-
 @media screen and (max-width: 650px) {
     nav a {
         font-size: 28px;
-    }
-
-    .main-container .characters .boarturn {
-        height: 80px;
-        width: auto;
-    }
-
-    .main-container .characters .reedturn {
-        height: 140px;
-        width: auto;
     }
 }
