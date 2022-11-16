@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../img/work/background\ template.png);
+    background: #cad0cb;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -273,7 +273,15 @@ nav ul li {
     }
 }
 
+@media screen and (max-width: 780px){
+
+    .contact-info .handles {
+        font-size: 34px;
+    }
+}
+
 @media screen and (max-width: 700px) {
+
     a {
         font-size: 20px;
     }
@@ -285,6 +293,14 @@ nav ul li {
 
     .contact-info h2  {
         display: none;
+    }
+
+    .contact-info h3 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        gap: 1rem;
     }
 
     #email-icon{
@@ -302,4 +318,32 @@ nav ul li {
         width: auto;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    #profile-photo {
+        height: auto;
+        width: 200px;
+    }
+
+    #email-icon{
+        height: 40px;
+        width: auto;
+    }
+    
+    #insta-icon{
+        height: 44px;
+        width: auto;
+    }
+    
+    #twitter-icon {
+        height: 40px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    nav a {
+        font-size: 24px;
+    }
 }

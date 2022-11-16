@@ -372,4 +372,18 @@ nav ul li {
     nav a {
         font-size: 28px;
     }
+
+    .header {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav a {
+        font-size: 24px;
+    }
+
+    .header {
+        font-size: 27px;
+    }
 }

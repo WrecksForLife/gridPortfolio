@@ -289,3 +289,35 @@ nav ul li {
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    nav a {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    nav a {
+        font-size: 24px;
+    }
+
+    .main-container .main-info #profile-photo {
+        height: 200px;
+        width: auto;
+    }
+
+    .main-container .main-info .aboutme {
+        font-size: 1rem;
+    }
+
+    .main-container .main-info #kappa {
+        height: 70px;
+        width: auto;
+    }
+
+    .main-container .main-info #devil {
+        height: 70px;
+        width: auto;
+    }
+    
+}
