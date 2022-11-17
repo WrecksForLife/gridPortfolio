@@ -318,6 +318,7 @@ nav ul li {
     max-width: 60%;
     align-items: center;
     justify-content: space-between;
+    color: #000;
 }
 
 .right-footer {

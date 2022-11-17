@@ -79,7 +79,7 @@ nav ul li {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 5fr 1fr 1fr 0.5fr 1fr ;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@ nav ul li {
     height: auto;
     width: 255px;
     border-radius: 50%;
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
     margin: auto;
 }
@@ -135,8 +135,19 @@ nav ul li {
     grid-row: 4 / 6;
 }
 
+.contact-info .linkedin {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+    margin: auto;
+}
+
+.contact-info .handle-linkedin {
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
+
 .contact-info h3 {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     margin: auto;
     font-family: 'Daft', sans-serif;
     font-size: 3.3rem;
@@ -162,6 +173,35 @@ nav ul li {
 
 }
 
+.resume-container {
+    margin: auto;
+    margin-top: 4rem;
+    min-width: 50%;
+    max-width: 60%;
+}
+
+#myresume {
+    line-height: 2rem;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Daft', sans-serif;
+    padding: 2rem;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+#resumephoto {
+    width: 700px;
+    height: auto;
+}
+
 #email-icon{
     height: 70px;
     width: auto;
@@ -173,6 +213,11 @@ nav ul li {
 }
 
 #twitter-icon {
+    height: 70px;
+    width: auto;
+}
+
+#linkedin-icon {
     height: 70px;
     width: auto;
 }
@@ -242,6 +287,10 @@ nav ul li {
         font-size: 20px;
     }
 
+    .contact-info .handles {
+        font-size: 2rem;
+    }
+
     .left-footer, .right-footer {
         font-size: 16px
     }
@@ -270,6 +319,11 @@ nav ul li {
 
     .header {
         grid-column: 1 / 4;
+    }
+
+    #resumephoto {
+        width: 500px;
+        height: auto;
     }
 }
 
@@ -318,8 +372,18 @@ nav ul li {
         width: auto;
     }
 
+    #myresume {
+        font-size: 2rem;
+    }
+
 }
 
+@media screen and (max-width: 530px) {
+    #resumephoto {
+        width: 400px;
+        height: auto;
+    }
+}
 @media screen and (max-width: 500px) {
     #profile-photo {
         height: auto;
@@ -340,10 +404,20 @@ nav ul li {
         height: 40px;
         width: auto;
     }
+
+    #linkedin-icon {
+        height: 50px;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 410px) {
     nav a {
         font-size: 24px;
+    }
+
+    #resumephoto {
+        width: 300px;
+        height: auto;
     }
 }
