@@ -117,6 +117,7 @@ nav ul li {
     border: 1px solid rgb(9, 39, 14);
     border-radius: 8px;
     padding: 20px;
+    color: #000;
     font-size: 1.3rem;
     text-shadow: 0px 1px #000;
     background: #fff;
@@ -153,6 +154,7 @@ nav ul li {
     align-items: center;
     justify-content: space-between;
     color: #000;
+    padding-top: 1rem;
 }
 
 .right-footer {
