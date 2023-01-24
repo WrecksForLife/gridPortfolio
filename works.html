@@ -21,7 +21,7 @@
 
     <div class="main-container">
       <div class="charandprops">
-        <h3 class="mobiletip">May need to zoom in on mobile devices!</h3>
+        <h3 class="mobiletip">Click to Zoom In!</h3>
         <div class="characters">
           <h1 class="header">Characters:</h1>
           <img
@@ -147,6 +147,13 @@
           />
         </div>
       </div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <img
+          src="./img/work/characters/reed in different styles 10-5-22.jpg"
+          alt=""
+        />
+      </div>
     </div>
 
     <div class="footer-container">
@@ -186,5 +193,19 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.querySelectorAll(".main-container img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
   </body>
 </html>
