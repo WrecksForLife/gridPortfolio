@@ -148,7 +148,7 @@ nav ul li {
     margin: auto;
 }
 
-.main-container .characters .canman {
+.main-container .characters .disenchant {
     height: auto;
     width: 618px;
     grid-column: 1 / 1;
@@ -218,7 +218,7 @@ nav ul li {
     margin: auto;
 }
 
-.main-container .characters .devillambent1 {
+.main-container .characters .kappaboar {
     height: auto;
     width: 1250px;
     grid-column: 1 / 1;
@@ -233,6 +233,13 @@ nav ul li {
 }
 
 /* Props */
+
+.main-container .props .futuramaprops {
+    height: auto;
+    width: 700px;
+    grid-column: 1/2;
+    margin: auto;
+}
 
 .main-container .props .plant {
     height: auto;
@@ -297,7 +304,7 @@ nav ul li {
     margin: auto;
 }
 
-img {
+.main-container img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
@@ -328,7 +335,8 @@ img {
     z-index: 100;
     display: none;
 }
-.main-container .popup-image span {
+
+/* .main-container .popup-image span {
     position: absolute;
     top: 0;right: 30px;
     font-size: 110px;
@@ -336,13 +344,13 @@ img {
     color: #fff;
     cursor: pointer;
     z-index: 100;
-    transition: .2s linear;
-}
+    transition: .2s linear; 
+} */
 
-.main-container .popup-image span:hover {
+/* .main-container .popup-image span:hover {
     transform: scale(1.1);
     color: lightcoral;
-}
+} */
 
 
 
@@ -360,9 +368,6 @@ img {
         width: 95%;
     }
 
-    .main-container .popup-image span {
-        font-size: 70px;
-    }
 }
 
 

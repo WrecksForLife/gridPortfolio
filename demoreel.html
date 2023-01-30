@@ -45,6 +45,14 @@
             class="demoreelinfo"
           />
         </div>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img
+            src="./img/work/characters/reed in different styles 10-5-22.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
 
@@ -85,5 +93,19 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      document.querySelectorAll(".main-container img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-image").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
   </body>
 </html>
